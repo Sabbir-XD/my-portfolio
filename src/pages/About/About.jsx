@@ -7,10 +7,6 @@ import {
   FaHeart,
   FaClock,
   FaAward,
-  FaCode,
-  FaPalette,
-  FaMobileAlt,
-  FaChartLine,
 } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 import Tilt from "react-parallax-tilt";
