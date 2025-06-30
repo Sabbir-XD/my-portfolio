@@ -31,7 +31,7 @@ const skills = [
 const stats = [
   { icon: <FaHeart />, value: 120, label: "Happy Clients" },
   { icon: <FaClock />, value: 4500, label: "Hours Worked" },
-  { icon: <FaAward />, value: 6, label: "Projects Completed" },
+  { icon: <FaAward />, value: 16, label: "Projects Completed" },
 ];
 
 const clients = [
@@ -53,7 +53,7 @@ const About = () => {
       data-aos="fade-left"
       data-aos-delay="200"
       data-aos-duration="1500"
-      className="bg-base-100 text-base-content py-12 px-4 sm:px-6 lg:px-8 transition-colors"
+      className="bg-base-100 text-base-content py-12 px-3 sm:px-6 lg:px-8 transition-colors"
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl text-center font-bold mb-10">
@@ -61,7 +61,7 @@ const About = () => {
         </h2>
 
         {/* Profile Section */}
-        <div className="bg-base-200 rounded-2xl p-10 mb-14 shadow">
+        <div className="bg-base-200 rounded-2xl p-5 lg:p-10 mb-14 shadow">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <Tilt>
               <img
@@ -113,7 +113,7 @@ const About = () => {
         </div>
 
         {/* Skills */}
-        <div className="bg-base-200 rounded-2xl p-10 mb-14 shadow">
+        <div className="bg-base-200 rounded-2xl p-5 lg:p-10 mb-14 shadow">
           <h2 className="text-3xl font-bold mb-8">
             My <span className="text-primary">Skills</span>
           </h2>
@@ -140,17 +140,18 @@ const About = () => {
         </div>
 
         {/* Stats */}
-        <div className="bg-base-200 rounded-2xl p-10 mb-14 shadow">
+        <div className="bg-base-200 rounded-2xl p-5 lg:p-10 mb-14 shadow">
           <div className="grid md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl text-primary mb-3">{stat.icon}</div>
+                <div className="text-4xl text-primary justify-items-center mb-3">{stat.icon}</div>
                 <div className="text-5xl font-bold mb-2 flex justify-center items-center gap-1">
                   <CountUp
                     start={0}
                     end={stat.value}
                     duration={3}
                     enableScrollSpy
+                    scrollSpyOnce={true}
                   />
                   {index === 2 && <span>+</span>}
                 </div>

@@ -64,7 +64,7 @@ const Contact = () => {
       data-aos="fade-up"
       data-aos-duration="3000"
       id="contact"
-      className="relative min-h-screen bg-base-100 text-base-content py-12 px-4 sm:px-6 transition-colors duration-500 overflow-hidden"
+      className="relative min-h-screen bg-base-100 text-base-content py-12 px-1 transition-colors duration-500 overflow-hidden"
     >
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
@@ -149,12 +149,12 @@ const Contact = () => {
           </div>
 
           {/* Right Side - Form */}
-          <div className="w-full lg:w-3/5">
+          <div className="w-full lg:w-4/5">
             <motion.div
               variants={fadeIn}
               className="bg-base-200 text-base-content  rounded-xl shadow-lg overflow-hidden"
             >
-              <div className="p-8">
+              <div className="p-2 lg:p-8">
                 <h3 className="text-2xl font-bold text-base-content mb-2">
                   Send Me a Message
                 </h3>
@@ -245,16 +245,16 @@ const Contact = () => {
             {/* Map Section */}
             <motion.div
               variants={fadeIn}
-              className="mt-16 rounded-xl overflow-hidden shadow-lg"
+              className="mt-8 rounded-xl overflow-hidden shadow-lg"
             >
               <iframe
                 title="Map Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.171265753135!2d-122.41941508468167!3d37.77492977975938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c2f1f8fd5%3A0xf57e1f4c57b6a12c!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1719635198765!5m2!1sen!2sus"
                 width="100%"
-                height="400"
+                height="350"
                 allowFullScreen=""
                 loading="lazy"
-                className="border-0 w-full h-[400px]"
+                className="border-0 w-full h-[350px]"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </motion.div>

@@ -18,7 +18,7 @@ const Resume = () => {
   // Real client/company data
   const experiences = [
     {
-      period: "2023 - Present",
+      period: "2025 - Present",
       company: "Freelance (Upwork & Fiverr)",
       role: "Front-End Developer",
       description:
@@ -26,17 +26,6 @@ const Resume = () => {
       achievements: [
         "5-star rating across all platforms",
         "95% repeat client rate",
-      ],
-    },
-    {
-      period: "2022 - 2023",
-      company: "TechSolutions Inc.",
-      role: "Junior Web Developer",
-      description:
-        "Collaborated on enterprise projects implementing responsive designs and optimizing front-end performance.",
-      achievements: [
-        "Reduced page load time by 40%",
-        "Implemented accessibility improvements",
       ],
     },
   ];
@@ -249,12 +238,12 @@ const Resume = () => {
               </h3>
               <div className="space-y-4">
                 {[
-                  { name: "HTML/CSS", level: 99, years: "5+ years" },
-                  { name: "JavaScript", level: 90, years: "4 years" },
-                  { name: "React", level: 85, years: "3 years" },
-                  { name: "Tailwind CSS", level: 95, years: "3 years" },
-                  { name: "WordPress", level: 88, years: "4 years" },
-                  { name: "UI/UX Design", level: 82, years: "3 years" },
+                  { name: "HTML/CSS", level: 99, years: "2+ years" },
+                  { name: "JavaScript", level: 90, years: "1 years" },
+                  { name: "React", level: 85, years: "1 years" },
+                  { name: "Tailwind CSS", level: 95, years: "1 years" },
+                  { name: "Firebase", level: 90, years: "1 years" },
+                  { name: "MongoDB", level: 80, years: "1 years" },
                 ].map((skill) => (
                   <div key={skill.name} className="mb-4">
                     <div className="flex justify-between mb-1">

@@ -14,13 +14,13 @@ const Home = () => {
       data-aos="fade-right"
       data-aos-offset="300"
       data-aos-easing="ease-in-sine"
-      className="relative h-screen w-full bg-slate-900 overflow-hidden"
+      className="relative w-full h-screen bg-slate-900 overflow-hidden"
     >
       {/* Background Particles */}
       <Particles
         id="tsparticles"
         init={particlesInit}
-        className="absolute top-0 left-0 w-full h-full z-0"
+        className="absolute top-0 left-0 w-full h-screen z-0"
         options={{
           fullScreen: { enable: false },
           background: {
