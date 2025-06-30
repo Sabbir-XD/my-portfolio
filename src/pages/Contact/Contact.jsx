@@ -19,7 +19,7 @@ const Contact = () => {
       title: "Location",
       desc: "Dhaka, Bangladesh",
       bg: "bg-blue-100",
-      iconColor: "text-blue-600",
+      iconColor: "text-primary",
     },
     {
       icon: <FaPhoneAlt className="text-2xl" />,
@@ -45,7 +45,7 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaLinkedinIn />, url: "#", color: "bg-blue-600" },
+    { icon: <FaLinkedinIn />, url: "#", color: "bg-primary" },
     { icon: <FaTwitter />, url: "#", color: "bg-sky-400" },
     { icon: <FaFacebookF />, url: "#", color: "bg-blue-800" },
   ];
@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative py-20 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden"
+      className="relative min-h-screen bg-base-100 text-base-content py-12 px-4 sm:px-6 transition-colors duration-500 overflow-hidden"
     >
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
@@ -76,11 +76,11 @@ const Contact = () => {
           variants={fadeIn}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Get In <span className="text-blue-600">Touch</span>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            Get In <span className="text-primary">Touch</span>
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
+          <p className="text-center max-w-2xl mx-auto mb-12 text-base-content/70">
             Have a project in mind or want to discuss potential opportunities?
             I'd love to hear from you.
           </p>
@@ -114,7 +114,7 @@ const Contact = () => {
                 Availability
               </h3>
               <div className="flex items-center space-x-4 mb-3">
-                <FaClock className="text-blue-600 text-xl" />
+                <FaClock className="text-primary text-xl" />
                 <div>
                   <p className="text-gray-600">Monday - Friday</p>
                   <p className="font-medium text-gray-800">9:00 AM - 5:00 PM</p>
@@ -229,7 +229,7 @@ const Contact = () => {
 
                   <motion.button
                     type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all flex items-center justify-center space-x-2"
+                    className="w-full bg-primary hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-all flex items-center justify-center space-x-2"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >

@@ -38,9 +38,9 @@ const Home = () => {
             },
           },
           particles: {
-            color: { value: "#38bdf8" }, // Tailwind sky-400
+            color: { value: "#3B82F6" }, // Tailwind sky-400
             links: {
-              color: "#38bdf8",
+              color: "#3B82F6",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -79,9 +79,9 @@ const Home = () => {
       {/* Foreground Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4 text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Hi, I'm Sabbir Hossain
+          <span className="hidden md:inline">Hi, I'm </span> Sabbir Hossain
         </h1>
-        <h2 className="text-2xl md:text-4xl text-sky-400 font-semibold h-20">
+        <h2 className="text-2xl md:text-4xl text-primary font-semibold h-20">
           <Typewriter
             options={{
               strings: [

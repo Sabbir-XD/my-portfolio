@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-// Fix for default marker icons in Leaflet
+// ✅ Custom marker icon fix (for production too)
 const icon = L.icon({ 
   iconUrl: '/images/marker-icon.png',
   iconRetinaUrl: '/images/marker-icon-2x.png',
@@ -15,12 +15,14 @@ const icon = L.icon({
 });
 
 export default function MapComponent() {
-  const position = [37.7749, -122.4194]; // San Francisco coordinates
+  // ✅ Dhaka, Bangladesh position
+  const position = [23.8103, 90.4125];
 
   return (
     <MapContainer 
-      center={position} 
-      zoom={13} 
+      center={position}
+      zoom={13}
+      scrollWheelZoom={false}
       style={{ height: '100%', width: '100%', borderRadius: '0.5rem' }}
       zoomControl={false}
     >
@@ -31,8 +33,8 @@ export default function MapComponent() {
       <Marker position={position} icon={icon}>
         <Popup>
           <div className="text-sm font-medium">
-            <p>My Office Location</p>
-            <p className="text-gray-600">San Francisco, CA</p>
+            <p>📍 Dhaka, Bangladesh</p>
+            <p className="text-gray-600">My Current Location</p>
           </div>
         </Popup>
       </Marker>
