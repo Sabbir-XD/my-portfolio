@@ -97,23 +97,21 @@ const Portfolio = () => {
   ];
 
   return (
-    <section
-      className="py-12 bg-base-200 transition-colors duration-500"
-      id="projects"
-    >
+    <section className="py-12 bg-gray-50" id="projects">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-center mb-2">
-          <span>My</span> <span className="text-primary">Project</span>
+        <h2 className="text-4xl font-extrabold text-center">
+          <span className="text-gray-800">My</span>{" "}
+          <span className="text-primary">Project</span>
         </h2>
-        <p className="text-center max-w-2xl mx-auto mb-12 text-base-content/70">
+        <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
           Here are some of my best projects showcasing my skills and experience.
         </p>
 
         {selectedProject ? (
-          <div className="bg-base-100 rounded-lg shadow-xl p-6 max-w-4xl mx-auto text-base-content">
+          <div className="bg-white rounded-lg shadow-xl p-6 max-w-4xl mx-auto">
             <button
               onClick={() => setSelectedProject(null)}
-              className="flex items-center text-primary mb-6 hover:text-primary-focus transition-colors"
+              className="flex items-center text-primary mb-6 hover:text-primary transition-colors"
             >
               <FaArrowLeft className="mr-2" /> Back to Projects
             </button>
@@ -123,14 +121,13 @@ const Portfolio = () => {
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="w-full h-auto rounded-2xl object-contain shadow-md"
+                  className="w-full h-auto rounded-2xl object-contain"
                 />
               </div>
               <div>
                 <h3 className="text-3xl font-bold mb-4">
                   {selectedProject.title}
                 </h3>
-
                 <div className="mb-6">
                   <h4 className="text-xl font-semibold mb-2">
                     Technologies Used:
@@ -139,36 +136,51 @@ const Portfolio = () => {
                     {selectedProject.technologies.map((tech, index) => (
                       <span
                         key={index}
-                        className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-medium"
+                        className="bg-blue-100 text-primary px-3 py-1 rounded-full text-sm"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
                 </div>
-
-                <p className="mb-6">{selectedProject.description}</p>
+                <p className="text-gray-700 mb-6">
+                  {selectedProject.description}
+                </p>
 
                 <div className="mb-6">
                   <h4 className="text-2xl font-semibold mb-2">
                     Challenges Faced:
                   </h4>
-                  <ul className="list-disc list-inside space-y-1 text-base-content/80">
-                    {selectedProject.challenges.map((challenge, i) => (
-                      <li key={i}>{challenge}</li>
-                    ))}
-                  </ul>
+                  <p className="text-gray-700">
+                    <li>{selectedProject.challenges[0]}</li>
+                  </p>
+                  <p className="text-gray-700">
+                    <li> {selectedProject.challenges[1]}</li>
+                  </p>
+                  <p className="text-gray-700">
+                    <li>{selectedProject.challenges[2]}</li>
+                  </p>
                 </div>
 
                 <div className="mb-8">
                   <h4 className="text-2xl font-semibold mb-2">
                     Future Improvements:
                   </h4>
-                  <ul className="list-disc list-inside space-y-1 text-base-content/80">
-                    {selectedProject.improvements.map((improvement, i) => (
-                      <li key={i}>{improvement}</li>
-                    ))}
-                  </ul>
+                  <p className="text-gray-700">
+                    <li>{selectedProject.improvements[0]}</li>
+                  </p>
+                  <p className="text-gray-700">
+                    <li>{selectedProject.improvements[1]}</li>
+                  </p>
+                  <p className="text-gray-700">
+                    <li>{selectedProject.improvements[2]}</li>
+                  </p>
+                  <p className="text-gray-700">
+                    <li>{selectedProject.improvements[3]}</li>
+                  </p>
+                  <p className="text-gray-700">
+                    <li>{selectedProject.improvements[4]}</li>
+                  </p>
                 </div>
 
                 <div className="flex flex-wrap gap-4">
@@ -176,44 +188,41 @@ const Portfolio = () => {
                     href={selectedProject.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary flex items-center gap-2 px-6 py-2 text-white transition-colors"
+                    className="flex items-center bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded transition-colors"
                   >
-                    <FaExternalLinkAlt /> Live Demo
+                    <FaExternalLinkAlt className="mr-2" /> Live Demo
                   </a>
                   <a
                     href={selectedProject.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline btn-primary flex items-center gap-2 px-6 py-2"
+                    className="flex items-center bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded transition-colors"
                   >
-                    <FaGithub /> View Code
+                    <FaGithub className="mr-2" /> View Code
                   </a>
                 </div>
               </div>
             </div>
           </div>
         ) : (
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="relative group bg-base-100 border border-base-300 rounded-xl shadow-md overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300"
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-66 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-48 object-cover transition-transform duration-500 ease-in-out hover:scale-110"
                 />
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-center items-center p-4 text-center rounded-xl">
-                  <h3 className="text-white text-xl font-bold mb-3">
-                    {project.title}
-                  </h3>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <button
                     onClick={() => setSelectedProject(project)}
-                    className="inline-flex items-center gap-2 px-5 py-2 border border-white rounded-full text-white hover:bg-white hover:text-primary transition-colors duration-300"
+                    className="mt-4 inline-flex items-center text-primary hover:text-primary transition-colors"
                   >
-                    View Details <FaExternalLinkAlt />
+                    View Details <FaExternalLinkAlt className="ml-2" />
                   </button>
                 </div>
               </div>

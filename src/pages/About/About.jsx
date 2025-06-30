@@ -73,7 +73,7 @@ const About = () => {
                 shapes the web.
               </p>
               <p className="text-lg">
-                I now build modern apps using React, Firebase, and Tailwind. I
+                 Now I build modern apps using React, Firebase, and Tailwind. I
                 love solving real-world problems and sharing what I learn.
               </p>
               <p className="text-lg">
