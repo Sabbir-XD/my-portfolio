@@ -1,8 +1,14 @@
 import { Link, useLocation, Outlet } from "react-router-dom";
 import { FiHome, FiUser, FiBook, FiBriefcase, FiMail } from "react-icons/fi";
-import { FaLinkedinIn, FaFacebookF, FaDownload, FaGithub } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaFacebookF,
+  FaDownload,
+  FaGithub,
+} from "react-icons/fa";
 import MyImage from "../assets/my-image.jpg";
 import { useEffect, useState } from "react";
+import ScrollAnimWrapper from "../components/ScrollAnimWrapper";
 
 const RootLayout = () => {
   const location = useLocation();
@@ -126,7 +132,9 @@ const RootLayout = () => {
             </h1>
           </div>
         )}
-        <Outlet />
+        <ScrollAnimWrapper>
+          <Outlet />
+        </ScrollAnimWrapper>
       </main>
 
       {/* Mobile Bottom Navigation */}

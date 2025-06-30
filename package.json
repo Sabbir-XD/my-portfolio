@@ -13,6 +13,7 @@
     "@ramonak/react-progress-bar": "^5.4.0",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.11",
+    "aos": "^2.3.4",
     "daisyui": "^5.0.43",
     "framer-motion": "^12.19.2",
     "react": "^18.2.0",

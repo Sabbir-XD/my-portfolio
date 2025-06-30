@@ -23,7 +23,10 @@ const Resume = () => {
       role: "Front-End Developer",
       description:
         "Delivered 16+ web solutions for international clients including responsive websites, UI components, and WordPress customizations with 100% client satisfaction.",
-      achievements: ["5-star rating across all platforms", "95% repeat client rate"],
+      achievements: [
+        "5-star rating across all platforms",
+        "95% repeat client rate",
+      ],
     },
     {
       period: "2022 - 2023",
@@ -31,7 +34,10 @@ const Resume = () => {
       role: "Junior Web Developer",
       description:
         "Collaborated on enterprise projects implementing responsive designs and optimizing front-end performance.",
-      achievements: ["Reduced page load time by 40%", "Implemented accessibility improvements"],
+      achievements: [
+        "Reduced page load time by 40%",
+        "Implemented accessibility improvements",
+      ],
     },
   ];
 
@@ -114,7 +120,12 @@ const Resume = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-base-100 text-base-content py-12 px-4 sm:px-6 transition-colors duration-500">
+    <section
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+      className="min-h-screen bg-base-100 text-base-content py-12 px-4 sm:px-6 transition-colors duration-500"
+    >
       <div className="container mx-auto max-w-6xl">
         {/* Header with download button */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-12">
@@ -163,7 +174,9 @@ const Resume = () => {
                       {edu.period} | {edu.institution}
                     </p>
                     <h4 className="text-xl font-semibold mt-1">{edu.degree}</h4>
-                    <p className="text-base-content/80 mt-2">{edu.description}</p>
+                    <p className="text-base-content/80 mt-2">
+                      {edu.description}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -198,7 +211,9 @@ const Resume = () => {
                       {exp.period} | {exp.company}
                     </p>
                     <h4 className="text-xl font-semibold mt-1">{exp.role}</h4>
-                    <p className="text-base-content/80 mt-2">{exp.description}</p>
+                    <p className="text-base-content/80 mt-2">
+                      {exp.description}
+                    </p>
                     {exp.achievements && (
                       <ul className="mt-3 space-y-1 list-disc list-inside text-base-content/80">
                         {exp.achievements.map((achievement, i) => (
@@ -334,8 +349,12 @@ const Resume = () => {
                   <p className="text-base-content/80">{cert.issuer}</p>
                   <div className="flex justify-between items-center mt-2">
                     <div>
-                      <p className="text-sm text-base-content/70">{cert.credential}</p>
-                      <p className="text-sm text-base-content/60">{cert.date}</p>
+                      <p className="text-sm text-base-content/70">
+                        {cert.credential}
+                      </p>
+                      <p className="text-sm text-base-content/60">
+                        {cert.date}
+                      </p>
                     </div>
                     <a
                       href={cert.link}

@@ -61,6 +61,8 @@ const Contact = () => {
 
   return (
     <section
+      data-aos="fade-up"
+      data-aos-duration="3000"
       id="contact"
       className="relative min-h-screen bg-base-100 text-base-content py-12 px-4 sm:px-6 transition-colors duration-500 overflow-hidden"
     >

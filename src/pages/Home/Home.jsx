@@ -10,7 +10,12 @@ const Home = () => {
   };
 
   return (
-    <div className="relative h-screen w-full bg-slate-900 overflow-hidden">
+    <div
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      className="relative h-screen w-full bg-slate-900 overflow-hidden"
+    >
       {/* Background Particles */}
       <Particles
         id="tsparticles"

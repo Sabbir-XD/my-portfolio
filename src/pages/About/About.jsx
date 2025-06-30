@@ -49,7 +49,12 @@ const clients = [
 
 const About = () => {
   return (
-    <section className="bg-base-100 text-base-content py-12 px-4 sm:px-6 lg:px-8 transition-colors">
+    <section
+      data-aos="fade-left"
+      data-aos-delay="200"
+      data-aos-duration="1500"
+      className="bg-base-100 text-base-content py-12 px-4 sm:px-6 lg:px-8 transition-colors"
+    >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl text-center font-bold mb-10">
           About <span className="text-primary">Me</span>
@@ -73,7 +78,7 @@ const About = () => {
                 shapes the web.
               </p>
               <p className="text-lg">
-                 Now I build modern apps using React, Firebase, and Tailwind. I
+                Now I build modern apps using React, Firebase, and Tailwind. I
                 love solving real-world problems and sharing what I learn.
               </p>
               <p className="text-lg">
@@ -81,13 +86,25 @@ const About = () => {
                 time with friends.
               </p>
               <div className="flex gap-4 mt-4">
-                <a href="https://www.linkedin.com/in/sabbir-xd/" target="_blank" className="btn btn-sm btn-outline btn-primary rounded-full">
+                <a
+                  href="https://www.linkedin.com/in/sabbir-xd/"
+                  target="_blank"
+                  className="btn btn-sm btn-outline btn-primary rounded-full"
+                >
                   <FaLinkedinIn />
                 </a>
-                <a href="https://www.facebook.com/sabbir.xd.f" target="_blank" className="btn btn-sm btn-outline btn-primary rounded-full">
+                <a
+                  href="https://www.facebook.com/sabbir.xd.f"
+                  target="_blank"
+                  className="btn btn-sm btn-outline btn-primary rounded-full"
+                >
                   <FaGithub />
-                </a> 
-                <a href="https://github.com/Sabbir-XD" target="_blank" className="btn btn-sm btn-outline btn-primary rounded-full">
+                </a>
+                <a
+                  href="https://github.com/Sabbir-XD"
+                  target="_blank"
+                  className="btn btn-sm btn-outline btn-primary rounded-full"
+                >
                   <FaTwitter />
                 </a>
               </div>
@@ -122,7 +139,6 @@ const About = () => {
           </div>
         </div>
 
-
         {/* Stats */}
         <div className="bg-base-200 rounded-2xl p-10 mb-14 shadow">
           <div className="grid md:grid-cols-3 gap-8">
@@ -130,7 +146,12 @@ const About = () => {
               <div key={index} className="text-center">
                 <div className="text-4xl text-primary mb-3">{stat.icon}</div>
                 <div className="text-5xl font-bold mb-2 flex justify-center items-center gap-1">
-                  <CountUp start={0} end={stat.value} duration={3} enableScrollSpy />
+                  <CountUp
+                    start={0}
+                    end={stat.value}
+                    duration={3}
+                    enableScrollSpy
+                  />
                   {index === 2 && <span>+</span>}
                 </div>
                 <p>{stat.label}</p>
@@ -152,7 +173,9 @@ const About = () => {
                 className="flex flex-col items-center justify-center w-28 h-28 mx-6 p-4 bg-base-100 rounded-xl shadow hover:scale-105 transition-transform"
               >
                 <span className="text-4xl mb-1">{client.logo}</span>
-                <p className="text-xs font-semibold text-center">{client.name}</p>
+                <p className="text-xs font-semibold text-center">
+                  {client.name}
+                </p>
               </div>
             ))}
           </Marquee>

@@ -97,7 +97,13 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-12 bg-base-100 text-base-content" id="projects">
+    <section
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className="py-12 bg-base-100 text-base-content"
+      id="projects"
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-extrabold text-center">
           <span className="text-base-content">My</span>{" "}
@@ -125,7 +131,7 @@ const Portfolio = () => {
                 />
               </div>
               <div>
-                <h3 className="text-3xl font-bold mb-4">
+                <h3 className="text-3xl bg-base-100 text-base-content font-bold mb-4">
                   {selectedProject.title}
                 </h3>
                 <div className="mb-6">
