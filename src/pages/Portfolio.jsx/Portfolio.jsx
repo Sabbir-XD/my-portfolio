@@ -97,18 +97,18 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-50" id="projects">
+    <section className="py-12 bg-base-100 text-base-content" id="projects">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-extrabold text-center">
-          <span className="text-gray-800">My</span>{" "}
+          <span className="text-base-content">My</span>{" "}
           <span className="text-primary">Project</span>
         </h2>
-        <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+        <p className="bg-base-100 text-base-content text-center mb-12 max-w-2xl mx-auto">
           Here are some of my best projects showcasing my skills and experience.
         </p>
 
         {selectedProject ? (
-          <div className="bg-white rounded-lg shadow-xl p-6 max-w-4xl mx-auto">
+          <div className="bg-base-100 text-base-content rounded-lg shadow-xl p-6 max-w-4xl mx-auto">
             <button
               onClick={() => setSelectedProject(null)}
               className="flex items-center text-primary mb-6 hover:text-primary transition-colors"
@@ -143,7 +143,7 @@ const Portfolio = () => {
                     ))}
                   </div>
                 </div>
-                <p className="text-gray-700 mb-6">
+                <p className="bg-base-100 text-base-content rounded-lg shadow-lg p-6 mb-6">
                   {selectedProject.description}
                 </p>
 
@@ -151,13 +151,13 @@ const Portfolio = () => {
                   <h4 className="text-2xl font-semibold mb-2">
                     Challenges Faced:
                   </h4>
-                  <p className="text-gray-700">
+                  <p className="bg-base-100 text-base-content">
                     <li>{selectedProject.challenges[0]}</li>
                   </p>
-                  <p className="text-gray-700">
+                  <p className="bg-base-100 text-base-content">
                     <li> {selectedProject.challenges[1]}</li>
                   </p>
-                  <p className="text-gray-700">
+                  <p className="bg-base-100 text-base-content">
                     <li>{selectedProject.challenges[2]}</li>
                   </p>
                 </div>
@@ -166,19 +166,19 @@ const Portfolio = () => {
                   <h4 className="text-2xl font-semibold mb-2">
                     Future Improvements:
                   </h4>
-                  <p className="text-gray-700">
+                  <p className="bg-base-100 text-base-content">
                     <li>{selectedProject.improvements[0]}</li>
                   </p>
-                  <p className="text-gray-700">
+                  <p className="bg-base-100 text-base-content">
                     <li>{selectedProject.improvements[1]}</li>
                   </p>
-                  <p className="text-gray-700">
+                  <p className="bg-base-100 text-base-content">
                     <li>{selectedProject.improvements[2]}</li>
                   </p>
-                  <p className="text-gray-700">
+                  <p className="bg-base-100 text-base-content">
                     <li>{selectedProject.improvements[3]}</li>
                   </p>
-                  <p className="text-gray-700">
+                  <p className="bg-base-100 text-base-content">
                     <li>{selectedProject.improvements[4]}</li>
                   </p>
                 </div>
@@ -209,7 +209,7 @@ const Portfolio = () => {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+                className="bg-base-200 text-base-content rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
               >
                 <img
                   src={project.image}
