@@ -88,18 +88,6 @@ const Resume = () => {
       color: "bg-warning hover:bg-warning-focus",
     },
     {
-      name: "Medium",
-      url: "https://medium.com/@YOUR_USERNAME",
-      icon: <FaMedium className="mr-2 text-lg" />,
-      color: "bg-base-300 hover:bg-base-400 text-base-content",
-    },
-    {
-      name: "Dev.to",
-      url: "https://dev.to/YOUR_USERNAME",
-      icon: <FaDev className="mr-2 text-lg" />,
-      color: "bg-base-300 hover:bg-base-400 text-base-content",
-    },
-    {
       name: "Portfolio",
       url: "https://yourportfolio.com",
       icon: <FaGlobe className="mr-2 text-lg" />,

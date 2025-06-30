@@ -40,7 +40,7 @@ const RootLayout = () => {
       </button>
 
       {/* Sidebar Nav - Desktop Only */}
-      <div className="hidden lg:flex w-20 xl:w-24 flex-col items-center pt-14 space-y-10 bg-base-300 border-r border-base-100">
+      <div className="hidden lg:flex w-20 xl:w-24 flex-col items-center pt-14 space-y-10 bg-base-500 border-r border-base-300">
         <div className="flex flex-col items-center gap-8">
           {navItems.map((item) => (
             <Link

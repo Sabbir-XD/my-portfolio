@@ -108,7 +108,7 @@ const Contact = () => {
 
             <motion.div
               variants={fadeIn}
-              className="bg-white p-6 rounded-xl shadow-sm"
+              className="bg-white  p-6 rounded-xl shadow-sm"
             >
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 Availability
@@ -150,13 +150,13 @@ const Contact = () => {
           <div className="w-full lg:w-3/5">
             <motion.div
               variants={fadeIn}
-              className="bg-white rounded-xl shadow-lg overflow-hidden"
+              className="bg-base-200 text-base-content  rounded-xl shadow-lg overflow-hidden"
             >
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-base-content mb-2">
                   Send Me a Message
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-base-content mb-6">
                   Fill out the form below and I'll get back to you within 24
                   hours.
                 </p>
@@ -166,14 +166,14 @@ const Contact = () => {
                     <div>
                       <label
                         htmlFor="name"
-                        className="block text-sm font-medium text-gray-700 mb-1"
+                        className="block text-sm font-medium text-base-content  mb-1"
                       >
                         Full Name
                       </label>
                       <input
                         type="text"
                         id="name"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                        className="w-full  px-4 py-3 rounded-lg border border-primary focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                         placeholder="John Doe"
                         required
                       />
@@ -181,14 +181,14 @@ const Contact = () => {
                     <div>
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-gray-700 mb-1"
+                        className="block text-sm font-medium text-base-content mb-1"
                       >
                         Email Address
                       </label>
                       <input
                         type="email"
                         id="email"
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                        className="w-full px-4 py-3 rounded-lg border border-primary focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                         placeholder="your@email.com"
                         required
                       />
@@ -198,14 +198,14 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="subject"
-                      className="block text-sm font-medium text-gray-700 mb-1"
+                      className="block text-sm font-medium text-base-content mb-1"
                     >
                       Subject
                     </label>
                     <input
                       type="text"
                       id="subject"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                      className="w-full px-4 py-3 rounded-lg border border-primary focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                       placeholder="What's this about?"
                       required
                     />
@@ -214,14 +214,14 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-sm font-medium text-gray-700 mb-1"
+                      className="block text-sm font-medium text-base-content mb-1"
                     >
                       Your Message
                     </label>
                     <textarea
                       id="message"
                       rows="5"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                      className="w-full px-4 py-3 rounded-lg border border-primary focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                       placeholder="Tell me about your project..."
                       required
                     ></textarea>

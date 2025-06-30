@@ -17,37 +17,6 @@ import Tilt from "react-parallax-tilt";
 import myImage2 from "../../assets/my-image-2.jpg";
 import ProgressBar from "@ramonak/react-progress-bar";
 
-const services = [
-  {
-    icon: <FaCode className="text-3xl" />,
-    title: "Frontend Development",
-    description:
-      "Building modern, responsive, and interactive UIs using React, Tailwind CSS, and JavaScript.",
-    color: "text-blue-600",
-  },
-  {
-    icon: <FaPalette className="text-3xl" />,
-    title: "UI/UX Implementation",
-    description:
-      "Crafting visually appealing, user-friendly layouts with a focus on performance and accessibility.",
-    color: "text-violet-600",
-  },
-  {
-    icon: <FaMobileAlt className="text-3xl" />,
-    title: "Responsive Web Design",
-    description:
-      "Ensuring seamless experiences across all screen sizes with mobile-first design principles.",
-    color: "text-green-600",
-  },
-  {
-    icon: <FaChartLine className="text-3xl" />,
-    title: "Firebase Integration",
-    description:
-      "Implementing authentication, Firestore, and storage to power secure and scalable web applications.",
-    color: "text-yellow-500",
-  },
-];
-
 const skills = [
   { name: "React/Next.js", level: 90 },
   { name: "JavaScript", level: 90 },
@@ -62,7 +31,7 @@ const skills = [
 const stats = [
   { icon: <FaHeart />, value: 120, label: "Happy Clients" },
   { icon: <FaClock />, value: 4500, label: "Hours Worked" },
-  { icon: <FaAward />, value: 16, label: "Projects Completed" },
+  { icon: <FaAward />, value: 6, label: "Projects Completed" },
 ];
 
 const clients = [
@@ -112,13 +81,13 @@ const About = () => {
                 time with friends.
               </p>
               <div className="flex gap-4 mt-4">
-                <a href="#" className="btn btn-sm btn-outline btn-primary rounded-full">
+                <a href="https://www.linkedin.com/in/sabbir-xd/" target="_blank" className="btn btn-sm btn-outline btn-primary rounded-full">
                   <FaLinkedinIn />
                 </a>
-                <a href="#" className="btn btn-sm btn-outline btn-primary rounded-full">
+                <a href="https://www.facebook.com/sabbir.xd.f" target="_blank" className="btn btn-sm btn-outline btn-primary rounded-full">
                   <FaGithub />
-                </a>
-                <a href="#" className="btn btn-sm btn-outline btn-primary rounded-full">
+                </a> 
+                <a href="https://github.com/Sabbir-XD" target="_blank" className="btn btn-sm btn-outline btn-primary rounded-full">
                   <FaTwitter />
                 </a>
               </div>
@@ -153,24 +122,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Services */}
-        <div className="bg-base-200 rounded-2xl p-10 mb-14 shadow">
-          <h2 className="text-3xl font-bold mb-6">
-            My <span className="text-primary">Services</span>
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="p-6 rounded-xl bg-base-100 shadow-sm hover:shadow-md transition"
-              >
-                <div className={`${service.color} mb-4`}>{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-sm">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Stats */}
         <div className="bg-base-200 rounded-2xl p-10 mb-14 shadow">
